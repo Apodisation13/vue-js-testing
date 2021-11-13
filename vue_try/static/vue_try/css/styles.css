@@ -1,0 +1,34 @@
+/*класс кнопка поля*/
+.f {
+    width: 70px;
+    height: 70px;
+}
+
+/*класс кннопка карта игрока*/
+.h_bronze {
+    width: 70px;
+    height: 100px;
+    background: lightyellow;
+}
+
+.h_silver {
+    width: 70px;
+    height: 100px;
+    background: silver;
+}
+
+.h_gold {
+    width: 70px;
+    height: 100px;
+    background: gold;
+}
+
+.h_white {
+    width: 70px;
+    height: 100px;
+    background: white;
+}
+
+a {
+    display: inline-block;
+}

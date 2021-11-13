@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+{#<div id="field">#}
+{#  <li v-for="(item) in field">#}
+{#        [[ item.dmg ]] --- [[ item.hp ]]#}
+{#  </li>#}
+{#</div>#}
+
+{#<div id="move">#}
+{#    <button v-on:click="move()">ход компа</button>#}
+{#</div>#}
+{#<button v-on:click="move()">ход компа</button>#}
+
+{#     <table border="1">#}
+{##}
+{#       <tr>#}
+{#       <td >[[ field[11].hp ]]<br>[[ field[11].dmg ]]</td>#}
+{#       <td>[[ field[10].hp ]]<br>[[ field[10].dmg ]]</td>#}
+{#       <td>[[ field[9].hp ]]<br>[[ field[9].dmg ]]</td>#}
+{#       </tr>#}
+{#         <tr>#}
+{#       <td>[[ field[8].hp ]]<br>[[ field[8].dmg ]]</td>#}
+{#       <td>[[ field[7].hp ]]<br>[[ field[7].dmg ]]</td>#}
+{#       <td>[[ field[6].hp ]]<br>[[ field[6].dmg ]]</td>#}
+{#       </tr>#}
+{#         <tr>#}
+{#       <td>[[ field[5].hp ]]<br>[[ field[5].dmg ]]</td>#}
+{#       <td>[[ field[4].hp ]]<br>[[ field[4].dmg ]]</td>#}
+{#       <td>[[ field[3].hp ]]<br>[[ field[3].dmg ]]</td>#}
+{#       </tr>#}
+{#         <tr>#}
+{#       <td>[[ field[2].hp ]]<br>[[ field[2].dmg ]]</td>#}
+{#       <td>[[ field[1].hp ]]<br>[[ field[1].dmg ]]</td>#}
+{#       <td style="height:50px;width:50px;">[[ field[0].hp ]]<br>[[ field[0].dmg ]]</td>#}
+{#       </tr>#}
+{#     </table>#}
+
+<a v-for="card in hand">
+      <p v-if="h.category==='bronze'" style="font-size: 10pt">[[ h ]]</p>
+        <p v-else-if="h.category==='gold'" style="font-size: 30pt">[[ h ]]</p>
+    </a>
+
+
+{#<button class="h" id=p0 v-on:click="chose_player_card(0)">[[ hand[0].dmg ]]<br>[[ hand[0].charges ]]</button>#}
+{#<button class="h" id=p1 v-on:click="chose_player_card(1)">[[ hand[1].dmg ]]<br>[[ hand[1].charges ]]</button>#}
+{#<button class="h" id=p2 v-on:click="chose_player_card(2)">[[ hand[2].dmg ]]<br>[[ hand[2].charges ]]</button>#}
+{#<button class="h" id=p3 v-on:click="chose_player_card(3)">[[ hand[3].dmg ]]<br>[[ hand[3].charges ]]</button>#}
+{#<button class="h" id=p4 v-on:click="chose_player_card(4)">[[ hand[4].dmg ]]<br>[[ hand[4].charges ]]</button>#}
+{#<button class="h" id=p5 v-on:click="chose_player_card(5)">[[ hand[5].dmg ]]<br>[[ hand[5].charges ]]</button>#}
+
+</body>
+</html>
